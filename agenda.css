@@ -1,1 +1,221 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03cm;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(234, 236, 247);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.box_border {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 5px;
+}
+
+hr {
+    margin-top: 100%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+
+                                    /* CHECKBOX STYLES */
+
+.checkbox {
+    height: 30%;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.checkbox_template {
+    margin: 7%;
+    display: flex;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.checkbox_template:hover {
+    background-color: rgb(216, 64, 43);
+    padding: 5%;
+    border-radius: 5px;
+}
+
+.checkbox_template_colour {
+    height: 15px;
+    width: 15px;
+    border-radius: 3px;
+    margin-top: 2px;
+    padding: 3%;
+}
+
+.checkbox_template > p {
+    margin-left: 10px;
+}
+
+.green {
+    background-color: rgb(71, 200, 35);
+}
+
+.blue {
+    background-color: rgb(16, 145, 213);
+}
+
+.yellow {
+    background-color: rgb(252, 194, 14);
+}
+
+.purple {
+    background-color: rgb(193, 86, 216);
+}
+
+                                /* MINI CALENDAR */
+
+.table_head {
+    text-align: center;
+}
+
+.calendar_wrapper {
+    max-width: 280px;
+    margin-bottom: 10%;
+    margin-left: 2%;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    
+}
+  
+.first-day {
+    grid-column-start: 3;
+}
+  
+.day-name {
+    background: rgb(248, 244, 244);
+}
+  
+.calendar_wrapper > h2 {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.calendar_wrapper > ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.calendar_wrapper > li {
+    padding: 2px;
+  }     
+
+.calendar_wrapper > table {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    height: 700px;
+    width: 700px;
+    grid-area: tableau;
+}
+
+.calendar_wrapper > td, th {
+    border-bottom: 1px solid black;
+    
+}
+
+.calendar > li, h2 {
+    color: rgba(24, 23, 23, 0.808);
+}
+
+.calendar > .number:hover {
+    background-color: rgb(214, 45, 22);
+    border-radius: 15%;
+    cursor: pointer;
+    transition: 0.4s;
+    padding: -80%;
+}
+
+                 /* MAIN TABLE               */
+
+.main_content_title {
+    margin-bottom: 50px;
+}
+
+table {
+    width: 80%;
+    height: 70%;
+    border-collapse: collapse;
+}
+
+
+
+td, th {
+    border-bottom: 0.8px solid rgb(219, 217, 217);
+    height: 50px;
+}
+
+.personal_event {
+    background-color: rgb(239, 215, 246);
+    border-radius: 5px;
+    border-left: 2px solid rgb(196, 82, 231);
+    color: rgb(196, 82, 231);
+    text-align: center;
+}
+
+.gym_event {
+    background-color: rgb(210, 235, 253);
+    border-radius: 5px;
+    border-left: 2px solid rgb(47, 149, 223);
+    color: rgb(47, 149, 223);
+    text-align: center;
+}
+
+.work_event {
+    background-color: rgb(254, 240, 207);
+    border-radius: 5px;
+    border-left: 2px solid rgb(253, 213, 118);
+    color: rgb(233, 187, 79);
+    text-align: center;
+}
+
+.family_event {
+    background-color: rgb(218, 246, 211);
+    border-radius: 5px;
+    border-left: 2px solid rgb(106, 182, 87);
+    color: rgb(106, 182, 87);
+    text-align: center;
+}
+
+                /*              AGENDA               */
