@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda</title>
+    <title>Formulaire</title>
     <link rel="stylesheet" href="agenda.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
-<body>
-    <main></main>
+<body class="form_index">
+    <main class="form_layout">
+        <article class="form_layout_content">
+            <img src="/Images/light_bulb_idea.png" alt="idea" class="img_idea">
+            <h1 class="form_layout_content_tittle">Allez ne soyez pas timide,<br>ajouter un événement !</h1>
+            <form class="form_action">
+                <label for="days" class="form_action_gap">Choisi une date:</label>
+                <input type="date" id="days" name="days" value="2021-10-16" min="2021-10-10" max="2022-10-16" class="form_action_gap">
+                <label for="hours">Choisi un horaire:</label>
+                <input type="time" id="hours" name="hours" min="08:00" max="21:00" required class="form_action_gap">
+                <label for="request"></label>
+                <textarea id="story" name="story" rows="" cols="33" class="form_action_gap">Choisi une activitée ...</textarea>
+                <input class="form_btn send_btn" type="submit" value="Let's Go !" class="form_action_gap">
+            </form>
+        </article>
+        <div class="form-layout-content_color"></div>
+    </main>
+    <a href="/agenda.html"><img src="/Images/arrow.png" alt="go back" class="go_back"></a>
 </body>
 </html>

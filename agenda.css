@@ -219,3 +219,120 @@ td, th {
 }
 
                 /*              AGENDA               */
+
+.form_layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #ebe9e9; */
+    /* z-index: -3; */
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form_layout_content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 70%;
+    width: 70%;
+    background-color: white;
+}
+
+
+.form-layout-content_color {
+    position: absolute;
+    bottom: -300px;
+    right: 1100px;
+    height: 700px;
+    width: 700px;
+    background-color: rgb(93, 221, 165);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.form_layout_content_tittle {
+    font-style: normal;
+    font-weight: 4000;
+    font-size: 30px;
+    margin: 100px;
+}
+
+.form_index {
+    z-index: -3;
+    background-color: #ebe9e9;
+
+}
+
+.form_textarea {
+    border: none;
+    height: 50px;
+    width: 250px;
+    border-radius: 18px;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:  5px 5px 10px #f2f2f2, -5px -5px 10px #ffffff;
+    text-align: center;
+}
+
+.form_btn {
+    padding: 12px 50px;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(255, 142, 94);
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+textarea {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    resize:none;
+    outline: none;
+}
+
+.form_action {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 5px 100px;
+}
+
+.form_action_gap {
+    margin: 3px 0;
+}
+
+.send_btn {
+    margin-top: 20px;
+    width: 50%;
+}
+
+.go_back {
+    position: absolute;
+    height: 3.50%;
+    width: 2.5%;
+    top: 40px;
+    right: 50px;
+    z-index: 10;
+    transform: rotate(180deg)
+}
+
+.book_btn {
+    width: 35%;
+    margin-left: 15%;
+}
+
+.form_btn:hover {
+    background-color: rgb(255, 177, 144);
+}
+
+.img_idea {
+    height: 40%;
+    position: absolute;
+    left: 55%;
+    top: 30%;
+}
